@@ -1,0 +1,43 @@
+@import (reference) "../../styles/vars.less";
+
+#block_modulecenter {
+    padding: 110px 0px;
+
+    .modulecenter {
+        &__title {
+            font-family: @font_1;
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 72px;
+
+            @media screen and (max-width: 880px) {
+                font-size: 50px;
+            }
+        }
+
+        &__text {
+            font-family: @font_2;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 30px;
+            text-align: center;
+            padding-top: 35px;
+            padding-bottom: 50px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media screen and (max-width: 880px) {
+                width: 100%;
+            }
+        }
+
+        &__button {
+
+            .button_1;
+            .button__color--main;
+        }
+    }
+
+
+}

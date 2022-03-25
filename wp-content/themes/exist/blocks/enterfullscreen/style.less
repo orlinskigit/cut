@@ -1,0 +1,162 @@
+@import (reference) "../../styles/vars.less";
+
+
+.block_enterfullscreen {
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: @color_main;
+  position: relative;
+  overflow: hidden;
+
+  font-family: @font_1;
+  box-sizing: border-box;
+
+  h1 {
+    font-size: 82px;
+    color: @color_white;
+    font-weight: bold;
+
+    &::selection {
+      .select__orange
+    }
+
+    @media screen and (max-width: 1440px) {
+      font-size: 60px;
+    }
+
+    @media screen and (max-width: 1370px) {
+      font-size: 55px;
+    }
+
+    @media screen and (max-width : 890px) {
+      font-size: 58px;
+    }
+  }
+
+  p {
+    color: @color_white;
+    font-size: 18px;
+
+    @media screen and (max-width: 1370px) {
+      font-size: 15px;
+    }
+  }
+
+  .enterfullscreen {
+    &__photo {
+      img {
+        position: absolute;
+        max-width: 150%;
+        top: -240px;
+        right: -270px;
+
+        @media screen and (max-width: 1440px) {
+          top: -220px;
+          right: -190px;
+        }
+
+        @media screen and (max-width: 1370px) {
+          top: -220px;
+          right: -190px;
+        }
+
+        @media screen and (max-width: 880px) {
+          display: none;
+        }
+      }
+    }
+
+    &__flex {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    &__buttonBox {
+      padding-top: 50px;
+      display: flex;
+    }
+
+    &__button {
+      .button_1;
+
+      &--first {
+        .button__color--white;
+        margin-right: 70px;
+
+        @media screen and (max-width: 880px) {
+          margin-right: 0px;
+        }
+      }
+
+      &--second {
+        .button__color--main;
+
+        img {
+          padding-right: 10px;
+        }
+      }
+    }
+
+
+  }
+
+
+  .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+    height: 100px;
+    background: url("images/wave.png");
+    background-size: 1000px 100px;
+
+    &1 {
+      animation: animate 30s linear infinite;
+      z-index: 100;
+      opacity: 0.5;
+      animation-delay: -5s;
+      bottom: -10px;
+    }
+
+    &2 {
+      animation: animate2 30s linear infinite;
+      z-index: 200;
+      opacity: 1;
+      animation-delay: 0.5s;
+      bottom: 0px;
+    }
+  }
+
+
+  @keyframes animate {
+    0% {
+      background-position-x: 0;
+    }
+
+    100% {
+      background-position-x: 1000px;
+    }
+
+  }
+
+  @keyframes animate2 {
+    0% {
+      background-position-x: 0;
+    }
+
+    100% {
+      background-position-x: -1000px;
+    }
+
+  }
+
+
+
+}

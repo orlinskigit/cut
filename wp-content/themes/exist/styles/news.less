@@ -1,0 +1,63 @@
+@import (reference) "vars.less";
+
+.site-content {
+  background-color: @color_white;
+}
+
+.blog {
+  .news {
+    margin-top: 0px !important;
+    background-color: #f6f6f6;
+  }
+}
+
+.news {
+  margin-top: 100px;
+
+  .entry-content {
+    width: 60%;
+    color: @color_yellow  !important;
+
+    @media screen and (max-width : 880px) {
+      width: 100%;
+    }
+  }
+
+  .flexer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    @media screen and (max-width : 880px) {
+      display: block;
+    }
+
+    .image {
+      width: 40% !important;
+      margin-right: 50px;
+
+      @media screen and (max-width : 880px) {
+        width: 100% !important;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h1 {
+      color: @color_yellow;
+    }
+
+    h2 {
+      padding-top: 0px !important;
+      margin: 0px !important;
+      line-height: 30px;
+    }
+
+    p {
+      color: #9f9f9f;
+    }
+  }
+}

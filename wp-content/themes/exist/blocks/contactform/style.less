@@ -1,0 +1,158 @@
+@import (reference) "../../styles/vars.less";
+
+#contactform {
+    background-image: url("images/kontakt.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+
+    @media screen and (max-width : 880px) {
+        height: 110vh;
+    }
+
+    @media screen and (max-width : 400px) {
+        padding-bottom: 50px;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+    }
+
+    .scroll {
+        width: 51px;
+        height: 49px;
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+
+        &::selection {
+            .select__orange;
+        }
+    }
+
+    .contact {
+        position: absolute;
+        top: 10%;
+        right: 0;
+        left: 0;
+
+
+
+        &__header {
+            font-family: @font_1;
+            font-weight: 100;
+            font-size: 55px;
+            line-height: 1;
+            color: @color_black;
+
+            @media screen and (max-width : 680px) {
+                font-size: 35px;
+            }
+
+            &::after {
+                content: "";
+                width: 10%;
+                height: 2px;
+                background: @color_yellow;
+                display: block;
+                margin-top: 25px;
+                margin-bottom: 20px;
+
+                @media screen and (max-width : 680px) {
+                    width: 80%;
+                }
+            }
+        }
+
+        &__phone,
+        &__mail {
+            a {
+                font-size: 40px !important;
+                color: @color_black  !important;
+                font-weight: 400;
+                font-family: @font_3  !important;
+            }
+
+            img {
+                width: 5%;
+
+                &::selection {
+                    .select__orange;
+                }
+
+                @media screen and (max-width : 670px) {
+                    width: 10%;
+                }
+            }
+        }
+
+        &__logo {
+            width: 18%;
+            padding-top: 100px;
+            padding-bottom: 20px;
+
+            @media screen and (max-width : 670px) {
+                width: 25%;
+                padding-bottom: 0px;
+                padding-top: 60px;
+            }
+
+            &::selection {
+                .select__orange;
+            }
+        }
+
+        &__text {
+            font-size: 40px;
+            color: @color_black;
+
+            &::selection {
+                .select__orange;
+            }
+
+            @media screen and (max-width : 670px) {
+                font-size: 30px;
+            }
+        }
+
+        &__info {
+            padding-top: 50px;
+            text-align: right;
+
+            a {
+                color: @color_black  !important;
+            }
+        }
+    }
+
+    a {
+        display: block;
+        color: @color_black;
+        font-size: 18px;
+        font-family: @font_1;
+        font-weight: 300;
+        padding-top: 20px;
+
+        &::selection {
+            .select__orange;
+        }
+    }
+
+    i {
+        padding: 20px 22px;
+        margin-top: 12px;
+        border-radius: 50%;
+        background-color: @color_main;
+        border: 1px solid @color_main;
+    }
+}
+
+.hentry {
+    margin: 0px !important;
+}

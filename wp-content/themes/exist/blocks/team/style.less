@@ -1,0 +1,178 @@
+@import (reference) "../../styles/vars.less";
+
+#block_team {
+    margin: 0px 0px 100px 0px;
+
+    @media screen and (max-width : 400px) {
+        margin: 20px 0px 20px 0px;
+        padding: 0px;
+    }
+
+    #rek {
+        top: -95px;
+
+        @media screen and (max-width : 880px) {
+            top: -30px;
+        }
+    }
+
+    #neuro {
+        top: -70px;
+
+        @media screen and (max-width : 880px) {
+            top: -15px;
+        }
+    }
+
+    #mio {
+        top: -90px;
+
+        @media screen and (max-width : 880px) {
+            top: 0px;
+        }
+    }
+
+    #kons {
+        top: -120px;
+
+        @media screen and (max-width : 880px) {
+            top: -55px;
+        }
+    }
+
+    #diag {
+        top: -110px;
+
+        @media screen and (max-width : 880px) {
+            top: -40px;
+        }
+    }
+
+    #ter {
+        top: -100px;
+
+        @media screen and (max-width : 880px) {
+            top: -40px;
+        }
+    }
+
+    .team {
+        box-shadow: 0 19px 38px #7d7d7d4d, 0 15px 12px #7d7d7d4d;
+        height: 499px;
+        position: relative;
+        border-radius: 2%;
+        margin-top: 120px;
+
+
+        @media screen and (max-width : 880px) {
+            height: 650px;
+            margin-top: 50px;
+        }
+
+        &__img {
+            width: 100%;
+            border-radius: 50%;
+            position: absolute;
+            top: -150px;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+
+            @media screen and (max-width : 880px) {
+                position: relative;
+                top: 50px;
+                width: 100%;
+            }
+        }
+
+        &__box {
+            position: absolute;
+            bottom: 50px;
+            padding: 0 20px;
+
+            #konsultacja {
+                top: -242px;
+
+                @media screen and (max-width : 880px) {
+                    top: -331px;
+                }
+            }
+
+            #diagnoza {
+                top: -110px;
+
+                @media screen and (max-width : 880px) {
+                    top: -180px;
+                }
+            }
+
+            #neuroflow {
+                top: -286px;
+
+                @media screen and (max-width : 880px) {
+                    top: -400px;
+                }
+            }
+
+            #terapia {
+                top: -282px;
+
+                @media screen and (max-width : 880px) {
+                    top: -367px;
+                }
+            }
+
+            #reki {
+                top: -159px;
+
+                @media screen and (max-width : 880px) {
+                    top: -215px;
+                }
+            }
+
+            #miofunkcja {
+                top: -252px;
+
+                @media screen and (max-width : 880px) {
+                    top: -351px;
+                }
+            }
+        }
+
+        &__name {
+            font-size: 58px;
+            color: #705353;
+            position: absolute;
+            top: -195px;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+
+
+            &::selection {
+                .select__white;
+            }
+
+            @media screen and (max-width : 880px) {
+                top: -100px;
+            }
+        }
+
+        &__text {
+            font-size: 23px;
+
+            @media screen and (max-width : 880px) {
+                font-size: 21px;
+            }
+        }
+
+        &__position {
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+    }
+}

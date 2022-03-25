@@ -1,0 +1,45 @@
+@import (reference) "../../styles/vars.less";
+
+#block_footer {
+
+    background-color: @color_black;
+    padding: 40px 0px;
+
+    .footer {
+        &__center {
+            display: flex;
+            align-items: center;
+        }
+
+        &__social {
+            a {
+                color: @color_white;
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+
+        &__logo {
+            img {
+                width: 40%;
+            }
+
+        }
+
+        &__copy {
+            margin-right: 0px;
+
+            a {
+                text-align: right;
+                color: @color_white;
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+    }
+
+}
+
+.hentry {
+    margin: 0 !important;
+}

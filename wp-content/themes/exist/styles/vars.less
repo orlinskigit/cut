@@ -1,0 +1,140 @@
+@color_1: #fff;
+@color_main: #FF4363;
+@color_yellow: #b3d8c4;
+@color_white: #fff;
+@color_black: #000;
+@color_blue: #0a90fd;
+
+// @font_1: 'Montserrat', sans-serif;
+@font_1: 'Roboto', sans-serif;
+@font_2: 'Poppins', sans-serif;
+@font_3: 'Roboto', sans-serif;
+@oswald: 'Roboto', sans-serif;
+
+.button_color_blue {
+	background-color: rgba(255, 255, 255, 0.568);
+	color: @color_main  !important;
+	border: 1px solid @color_main;
+
+	&:hover {
+		background-color: @color_main;
+		color: @color_white  !important;
+		border: 1px solid @color_white;
+
+		&::selection {
+			color: @color_white;
+		}
+	}
+
+	&::selection {
+		color: @color_main;
+	}
+}
+
+.button_color_yellow {
+	background-color: @color_yellow;
+	color: @color_white  !important;
+
+	&:hover {
+		background-color: @color_white;
+		color: @color_yellow  !important;
+		border: 1px solid @color_yellow;
+
+		&::selection {
+			color: @color_white;
+		}
+	}
+
+	&::selection {
+		color: @color_main;
+	}
+}
+
+.button__color--white {
+	background-color: @color_white ;
+	color: @color_main;
+	border: 1px solid @color_white;
+	transition: 0.5s ease-in-out all;
+
+	&:hover {
+		background-color: @color_main;
+		color: @color_white  !important;
+		border-color: @color_white;
+
+		&::selection {
+			color: @color_white;
+		}
+	}
+}
+
+.button__color--main {
+	background-color: @color_main;
+	color: @color_white;
+	border: 1px solid @color_main;
+	transition: 0.5s ease-in-out all;
+
+	&:hover {
+		border-color: @color_white;
+	}
+}
+
+.button_1 {
+	font-size: 24px;
+	padding: 20px 25px;
+	border-radius: 35px;
+	text-decoration: none;
+
+	@media screen and (max-width: 1440px) {
+		font-size: 20px;
+		line-height: 35px;
+		padding: 17px 25px;
+	}
+	@media screen and (max-width: 1370px) {
+		font-size: 18px;
+		line-height: 33px;
+		padding: 15px 25px;
+	}
+	@media screen and (max-width: 880px) {
+		font-size: 16px;
+	}
+}
+
+.select__orange {
+	background-color: transparent;
+	color: @color_main;
+	text-shadow: -0.5px @color_white, 0.5px @color_white,
+		0.5px @color_white, -0.5px @color_white;
+}
+
+.select__white {
+	background-color: transparent;
+	color: @color_white;
+	text-shadow: -1px 0 @color_main, 0 1px @color_main,
+		1px 0 @color_main, 0 -1px @color_main;
+}
+
+.select__blue {
+	background-color: transparent;
+	color: @color_blue;
+}
+
+.shadow__orange {
+	text-shadow: -1px 0 @color_main, 0 1px @color_main,
+		1px 0 @color_main, 0 -1px @color_main;
+}
+
+.shadow__black {
+	text-shadow: -1px 0 @color_black, 0 1px @color_black,
+		1px 0 @color_black, 0 -1px @color_black;
+}
+
+.background {
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 0.5s ease-in-out all;
+
+	@media screen and (max-width : 670px) {
+		background-position: left;
+	}
+}

@@ -1,0 +1,26 @@
+@import (reference) "vars.less";
+
+.blog {
+  .entry-title {
+    a {
+      color: @color_yellow;
+      text-decoration: none;
+      font-size: 40px;
+    }
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  h2 {
+    color: @color_yellow;
+    font-weight: bold;
+    padding-top: 100px !important;
+    padding-bottom: 25px;
+
+    @media screen and (max-width: 680px) {
+      padding-top: 80px;
+    }
+  }
+}

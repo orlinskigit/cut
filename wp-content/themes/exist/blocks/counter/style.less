@@ -1,0 +1,74 @@
+@import (reference) "../../styles/vars.less";
+
+#block_counter {
+
+    .counter {
+        background-color: @color_main;
+        overflow: auto;
+        width: 100%;
+
+        &__flex {
+            display: flex;
+            justify-content: center;
+
+            p {
+                font-size: 60px !important;
+
+                @media screen and (max-width: 1370px) {
+                    font-size: 52px;
+                }
+            }
+        }
+    }
+
+    .stats-col {
+        float: left;
+        width: 25%;
+        text-align: center;
+        height: 100%;
+        padding: 50px 0px;
+
+        @media screen and (max-width: 880px) {
+            width: 50%;
+            height: 40%;
+        }
+    }
+
+
+    .stats-col i {
+        font-size: 50px;
+        color: #fff;
+    }
+
+    .stats-col h1 {
+        font-size: 60px;
+        padding: 0;
+        font-weight: bold;
+        color: #fff;
+        font-family: 'Open Sans';
+        margin: 0 !important;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 1370px) {
+            font-size: 52px;
+        }
+    }
+
+    .stats-col span {
+        width: 60px;
+        background: #fff;
+        height: 2px;
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    .stats-col p {
+        color: #fff;
+        font-size: 18px;
+        margin: 0;
+        font-family: 'Open Sans';
+    }
+
+}
